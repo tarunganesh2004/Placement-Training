@@ -19,14 +19,18 @@ public class Q26 {
                 freq[s.charAt(j + (k - 2 * i - 1)) - 'a']++;
 
             }
-            
+
             int maxFreq = 0;
             int totalFreq = 0;
             for (int f : freq) {
                 maxFreq = Math.max(maxFreq, f);
                 totalFreq += f;
             }
+            operations += totalFreq - maxFreq;
+
         }
+        return operations;
+        
 
     }
     // public static boolean isPalindrome(String s) {
