@@ -11,7 +11,6 @@ public class Q59 {
     public static String containsMissingLetters(String s) {
 
         s = s.toLowerCase();
-        // int[] a = new int[26];
         boolean[] b = new boolean[26];
 
         for (int i = 0; i < s.length(); i++) {
